@@ -7,13 +7,11 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<LandingPage />} />
-
-				<Route path="/album/:slug" element={<AlbumDetails />} />
-
-				<Route path="*" element={<LandingPage />} />
-			</Routes>
+				<Routes>
+					<Route path="/" element={<LandingPage />} />
+					<Route path="/album/:slug" element={<AlbumDetails />} />
+					<Route path="*" element={<LandingPage />} />
+				</Routes>
 			</BrowserRouter>
 		</div>
 	);
