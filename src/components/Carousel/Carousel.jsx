@@ -35,6 +35,7 @@ const Carousel = ({ data, renderCardComponent }) => {
 					<SwiperSlide key={item?.id}>{renderCardComponent(item)}</SwiperSlide>
 				))}
 			</Swiper>
+			
 		</div>
 	);
 };
